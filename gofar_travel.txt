@@ -7,3 +7,9 @@ CREATE TABLESPACE test_purposes DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\test
 
 
 CREATE UNDO TABLESPACE undo_tablespace DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\undo_tablespace.dbf' size 5M;
+
+
+CREATE USER dba_user
+IDENTIFIED BY dba_user
+DEFAULT TABLESPACE gofar_travel
+QUOTA UNLIMITED ON gofar_travel; 
