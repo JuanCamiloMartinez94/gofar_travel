@@ -1,0 +1,9 @@
+CREATE TABLESPACE gofar_travel DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\gofar_travel1.dbf' size 333M,
+'C:\oraclexe\app\oracle\oradata\XE\gofar_travel2.dbf' size 333M,
+'C:\oraclexe\app\oracle\oradata\XE\gofar_travel3.dbf' size 334M;
+
+
+CREATE TABLESPACE test_purposes DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\test_purposes.dbf' size 500M;
+
+
+CREATE UNDO TABLESPACE undo_tablespace DATAFILE 'C:\oraclexe\app\oracle\oradata\XE\undo_tablespace.dbf' size 5M;
