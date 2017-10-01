@@ -11,12 +11,6 @@ IDENTIFIED BY dba_user
 DEFAULT TABLESPACE gofar_travel
 QUOTA UNLIMITED ON gofar_travel; 
 
-
-CREATE USER dba_user
-IDENTIFIED BY dba_user
-DEFAULT TABLESPACE gofar_travel
-QUOTA UNLIMITED ON gofar_travel; 
-
 GRANT DBA TO dba_user;
 
 CREATE PROFILE manager LIMIT
@@ -36,3 +30,27 @@ PASSWORD_LIFE_TIME 100
 SESSIONS_PER_USER 2
 IDLE_TIME 30
 FAILED_LOGIN_ATTEMPTS 1;
+
+CREATE USER user_manager
+IDENTIFIED BY user_manager
+DEFAULT TABLESPACE gofar_travel
+PROFILE manager;
+GRANT CONNECT TO user_manager;
+
+CREATE USER user_finance
+IDENTIFIED BY user_finance
+DEFAULT TABLESPACE gofar_travel
+PROFILE finance;
+GRANT CONNECT TO user_finance;
+
+CREATE USER user_development
+IDENTIFIED BY user_development
+DEFAULT TABLESPACE gofar_travel
+PROFILE development;
+GRANT CONNECT TO user_development;
+
+CREATE USER user_manager2
+IDENTIFIED BY user_manager2
+DEFAULT TABLESPACE gofar_travel
+PROFILE manager;
+GRANT CONNECT TO user_manager2;
